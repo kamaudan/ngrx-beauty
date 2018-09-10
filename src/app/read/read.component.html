@@ -1,0 +1,10 @@
+<div class="right" >
+  <h3>Beuty</h3>
+  <ul>
+    <li (click)="delBeuty(i)"  *ngFor="let beuty of beuty | async; let i=index">
+      <a [href]="beuty.url" target="_blank">
+        {{beuty.name}}
+      </a>
+    </li>
+  </ul>
+</div>
